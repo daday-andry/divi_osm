@@ -36,4 +36,8 @@ function osm_initialize_extension() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/DiviOsm.php';
 }
 add_action( 'divi_extensions_init', 'osm_initialize_extension' );
+wp_enqueue_script("leaflet_js","http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js");
+wp_enqueue_style("leaflet_css","http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css");
+
+
 endif;
